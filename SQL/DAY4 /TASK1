@@ -1,0 +1,17 @@
+CREATE TABLE students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(50),
+    course_name VARCHAR(50),
+    marks INT
+);
+
+INSERT INTO students (student_name, course_name, marks) VALUES
+('Alwin', 'BCA', 100),
+('Bino', 'BSc.IT', 80),
+('Siddhu Joel', 'BCA', 50),
+('Rijay', 'BSc.CT', 70),
+('Mathew', 'BCA', 60);
+
+SELECT student_name, course_name, marks
+FROM students
+ORDER BY course_name, marks DESC;
